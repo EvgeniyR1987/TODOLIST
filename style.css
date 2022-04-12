@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #030303;
+    background: #3d5f82;
+}
+h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: solid;
+}
+.btn {
+    color: #31d78c;
+    place-content: center;
+    place-items: center;
+    width: fit-content;
+    border-radius: 99px;
+    border: 1px solid #31d78c;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+    background: #fff;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color:rgb(231, 239, 235);
+}
+.btn.danger {
+    color: #eb3c15;
+    place-content: center;
+    place-items: center;
+    width: fit-content;
+    border-radius: 99px;
+    border: 1px solid #eb3c15;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+    background: #fff;
+}
+.btn.danger:hover {
+    cursor: pointer;
+    background-color:rgb(236, 219, 219);
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-control input,
+.form-control select {
+    margin: 0;
+    outline: none;
+    border: 2px solid #ccc;
+    display: block;
+    width: 95%;
+    color: #2c3e50;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+.card {
+    overflow: hidden;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+.card.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    transition: .22s all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

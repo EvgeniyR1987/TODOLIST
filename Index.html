@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container" id="app">
+      <div class="card">
+          <h1>To Do List</h1>
+          <div class="form-control">
+             <input 
+                 type="text" 
+                 v-bind:placeholder="placeholder" 
+                 v-bind:value="inputvalue" 
+                 v-on:input="inputchange" 
+                 v-on:keypress.enter="addnewtask"
+              />
+              <button class="btn" v-on:click="addnewtask">Add Task</button>
+            </div>
+            
+            <hr />
+
+            <ul class="list">
+                <li class="list-item" v-for="(note, index) in notes">
+                   ({{index+1}}) {{note}}
+                    <button class="btn danger" v-on:click="removetask(index)">Delete</button>
+                </li>
+            </ul>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="Vue3.js"></script>
+</body>
+</html>
