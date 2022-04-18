@@ -7,8 +7,13 @@
     <title>To Do List</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<style>
+    [v-cloak] {
+        display:none;
+    }
+</style>
 <body>
-    <div class="container" id="app">
+    <div class="container" id="app" v-cloak>
       <div class="card">
           <h1>To Do List</h1>
           <div class="form-control">
@@ -22,10 +27,10 @@
             </div>
             <hr />
             <ul class="list" v-if="notes.length !== 0"...>
-                <li class="list-item" v-for="(note, index) in notes">
+                <li class="list-item" v-for="(note, index) in notes" v-bind:key="note">
                     <div>
                         <input type="checkbox"/>
-                        ({{index+1}}) {{note}}
+                        {{index+1}}) {{note}}
                     </div>
                     <button class="btn danger" v-on:click="removetask(index)">Delete</button>
                 </li>
