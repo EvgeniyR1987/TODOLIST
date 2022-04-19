@@ -3,7 +3,8 @@ Vue.createApp({
         return{
           placeholder: 'Start typing',
           inputvalue: '',
-          notes: []
+          notes: [],
+          checked: []
         }
     },
     mounted() {
