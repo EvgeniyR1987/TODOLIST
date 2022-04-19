@@ -9,6 +9,6 @@
 
 -Delete tasks
 
-##### Below the link to the web-site with my app.
+##### Below you find link to the web-site with my app.
 
 [Link](url) and ![Image](src)
