@@ -29,8 +29,10 @@
             <ul class="list" v-if="notes.length !== 0"...>
                 <li class="list-item" v-for="(note, index) in notes" v-bind:key="note">
                     <div>
-                        <input type="checkbox"/>
-                        {{index+1}}) {{note}}
+                        <input type="checkbox" v-model="checked[note]"/>
+                        <span :style="checked[note] ? 'text-decoration: line-through' : ''">
+                            {{index+1}}) {{note}}
+                        </span>
                     </div>
                     <button class="btn danger" v-on:click="removetask(index)">Delete</button>
                 </li>
