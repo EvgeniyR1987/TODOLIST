@@ -8,13 +8,8 @@ Vue.createApp({
         }
     },
     mounted() {
-        try {
-          this.notes = JSON.parse(localStorage.getItem('note'))
-        } 
-        catch(e) {
-          this.notes = []
-        }
-    },
+        this.notes = JSON.parse(localStorage.getItem('note')) || [];
+      },
     watch: {
             notes: {
                 handler: function() {
