@@ -8,16 +8,21 @@ Vue.createApp({
         }
     },
     mounted() {
-        this.notes = JSON.parse(localStorage.getItem('note')) || [];
-      },
-      watch: {
+        try {
+          this.notes = JSON.parse(localStorage.getItem('note'))
+        } 
+        catch(e) {
+          this.notes = []
+        }
+    },
+    watch: {
             notes: {
                 handler: function() {
-                    localStorage.setItem('note', JSON.stringify(this.notes));
+                localStorage.setItem('note', JSON.stringify(this.notes));
                 },
                 deep: true
             }
-        },
+    },
     methods: {
         addnewtask(){
             if (this.inputvalue !== ''){
