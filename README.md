@@ -9,6 +9,6 @@
 
 -Delete tasks
 
-##### Below you find link to the web-site with my app.
+##### Below link to the web-site with my app.
 
 [Testtodolist](https://testtodolist.netlify.app)
