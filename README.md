@@ -11,4 +11,4 @@
 
 ##### Below you find link to the web-site with my app.
 
-[Link](https://testtodolist.netlify.app)
+[Testtodolist](https://testtodolist.netlify.app)
