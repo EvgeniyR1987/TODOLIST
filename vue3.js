@@ -3,8 +3,7 @@ Vue.createApp({
         return{
           placeholder: 'Start typing',
           inputvalue: '',
-          notes: [],
-          checked: []
+          notes: []
         }
     },
     mounted() {
@@ -21,7 +20,7 @@ Vue.createApp({
     methods: {
         addnewtask(){
             if (this.inputvalue !== ''){
-                this.notes.push(this.inputvalue)
+                this.notes.push({title:this.inputvalue, checked:false})
                 this.inputvalue=''
             }
         },
