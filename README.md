@@ -5,6 +5,8 @@
 ### Features:
 -You can add tasks
 
+-Edit tasks
+
 -Mark tasks as done
 
 -Delete tasks
